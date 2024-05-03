@@ -1,51 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .bg {
-            background-image: url('https://via.placeholder.com/1500x1000');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
-        }
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-            height: 100%;
-        }
-        .content {
-            text-align: center;
-            color: white;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    </style>
-</head>
-<body>
-    <div class="bg">
-        <div class="overlay">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="content">
-                            <h1>Coming Soon</h1>
-                            <p>Our website is under construction. Stay tuned for something amazing!</p>
-                            <button type="button" class="btn btn-primary">Notify Me!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G & Z LLC</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-cover bg-center">
+    <nav class="sticky top-0 z-50 bg-black text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-lg font-semibold">G & Z LLC</div>
+        <div class="space-x-4">
+          <a href="#" class="text-white font-bold">Home</a>
+          <a href="#" class="text-white font-bold">About Us</a>
+          <a href="#" class="text-white font-bold">Contact</a>
         </div>
-    </div>
-</body>
+      </div>
+    </nav>
+
+    <section class="bg-blue-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-3xl font-bold mb-3">
+              Premium Truck Dispatch Services
+            </h2>
+            <p class="mb-5 mr-5">
+              Streamline your operations and enhance your shipping capabilities
+              with our top-notch truck dispatch services. Tailored to meet the
+              unique needs of your business, our solutions ensure efficient
+              management and timely deliveries.
+            </p>
+            <a
+              href="#"
+              class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded"
+              >Learn More</a
+            >
+          </div>
+          <div>
+            <img
+              src="./images/trucking.avif"
+              alt="Truck Dispatch Services"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800">Our Services</h2>
+          <p class="text-gray-600">
+            Explore the variety of services we offer to enhance your business
+            operations.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+            data-aos="fade-up"
+          >
+            <img
+              src="./images/logictics.jpg"
+              alt="Logistics Management"
+              class="w-full"
+              style="height: 300px; width: 400px; object-fit: cover"
+            />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Logistics Management
+              </h3>
+              <p class="text-gray-600">
+                Optimize your supply chain with our comprehensive logistics
+                solutions.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="./images/fleet.jpg"
+              alt="Fleet Operations"
+              class="w-full"
+              style="height: 300px; width: 400px; object-fit: cover"
+            />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Fleet Operations
+              </h3>
+              <p class="text-gray-600">
+                Efficient fleet management to ensure reliability and
+                cost-effectiveness.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./images/web.avif"
+              alt="Web Development"
+              class="w-full"
+              style="height: 300px; width: 400px; object-fit: cover"
+            />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Web Development
+              </h3>
+              <p class="text-gray-600">
+                Custom web development services to enhance your online presence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center"
+        >
+          <div
+            class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="text-3xl font-bold text-blue-500" data-aos="zoom-in">
+              100+
+            </div>
+            <div class="text-gray-600 mt-2">Team Members</div>
+          </div>
+          <div
+            class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="text-3xl font-bold text-blue-500"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              300+
+            </div>
+            <div class="text-gray-600 mt-2">Total Projects</div>
+          </div>
+          <div
+            class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <div
+              class="text-3xl font-bold text-blue-500"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              1,300+
+            </div>
+            <div class="text-gray-600 mt-2">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+          <div
+            class="order-2 md:order-1"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./images/truckrd.avif"
+              alt="Truck Driving on Road"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+          <div
+            class="order-1 md:order-2 text-center md:text-left"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Elevate Your Truck Dispatch Business.
+            </h2>
+            <p class="mb-6 text-lg">
+              Ready to revolutionize your truck dispatch business? Our experts
+              have the tools and strategies to propel you to new heights. Let's
+              elevate your success together. Contact us now!
+            </p>
+            <ul class="list-disc mb-6 space-y-2 text-lg pl-5 text-left">
+              <li class="text-blue-600 font-semibold">
+                <span class="text-gray-800"
+                  >Industry-leading truck dispatch solutions tailored to your
+                  needs.</span
+                >
+              </li>
+              <li class="text-blue-600 font-semibold">
+                <span class="text-gray-800"
+                  >Boost efficiency and profitability with our expert
+                  guidance.</span
+                >
+              </li>
+              <li class="text-blue-600 font-semibold">
+                <span class="text-gray-800"
+                  >Join our satisfied clients and experience the next-level
+                  success you deserve.</span
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center mb-4">Meet Our Team</h2>
+        <div class="owl-carousel team-carousel owl-theme">
+          <!-- Team Member 1 -->
+          <div class="item">
+            <div class="card text-center">
+              <img
+                src="./images/girl1.jpg"
+                class="card-img-top w-100 h-100"
+                alt="Alice Murray"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Alice Murray</h5>
+                <p class="card-text">Chief Executive Officer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="item">
+            <div class="card text-center">
+              <img
+                src="./images/man1.jpg"
+                class="card-img-top"
+                alt="Bob Johnson"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bob Johnson</h5>
+                <p class="card-text">Chief Technology Officer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="item">
+            <div class="card text-center">
+              <img
+                src="./images/girl2.jpg"
+                class="card-img-top"
+                alt="Clara Lee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Clara Lee</h5>
+                <p class="card-text">Director of Operations</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="item">
+            <div class="card text-center">
+              <img
+                src="./images/man2.jpg"
+                class="card-img-top"
+                alt="Daniel Smith"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Daniel Smith</h5>
+                <p class="card-text">Marketing Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center text-uppercase mb-4">Clients Feedback</h2>
+        <div class="owl-carousel testimonial-carousel owl-theme">
+          <!-- Testimonial Item 1 -->
+          <div class="testimonial-item">
+            <p class="testimonial-content">
+              "G & Z LLC's software streamlined our workflow significantly,
+              reducing overhead and increasing our response times."
+            </p>
+            <div class="d-flex align-items-center justify-items-center">
+              <div
+                class="image-wrapper"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="./images/girl3.avif"
+                  alt="Samantha Lee"
+                  style="width: auto; height: 100%"
+                />
+              </div>
+              <div class="ml-3">
+                <p class="testimonial-name">Samantha Lee</p>
+                <p class="testimonial-position">Operations Director</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial Item 2 -->
+          <div class="testimonial-item">
+            <p class="testimonial-content">
+              "Thanks to G & Z LLC, our customer satisfaction has skyrocketed.
+              Their precision and efficiency are unmatched."
+            </p>
+            <div class="d-flex align-items-center justify-items-center">
+              <div
+                class="image-wrapper"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="./images/man3.jpg"
+                  alt="James Corbett"
+                  style="width: auto; height: 100%"
+                />
+              </div>
+              <div class="ml-3">
+                <p class="testimonial-name">James Corbett</p>
+                <p class="testimonial-position">Customer Relations Manager</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial Item 3 -->
+          <div class="testimonial-item">
+            <p class="testimonial-content">
+              "G & Z LLC's dispatch solutions transformed our operations. Better
+              communication and super efficiency are just the beginning."
+            </p>
+            <div class="d-flex align-items-center justify-items-center">
+              <div
+                class="image-wrapper"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="./images/girl4.jpg"
+                  alt="Elena Rodriguez"
+                  style="width: auto; height: 100%"
+                />
+              </div>
+              <div class="ml-3">
+                <p class="testimonial-name">Elena Rodriguez</p>
+                <p class="testimonial-position">Logistics Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe-section">
+      <div class="container">
+        <h2 class="subscribe-title">Don't Miss Out!</h2>
+        <p class="subscribe-subtitle">Subscribe to get every single update.</p>
+        <form action="#" method="POST" class="subscribe-form">
+          <input type="email" placeholder="email@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-black text-gray-200 py-16">
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm"
+      >
+        <div>
+          <h4 class="text-xl font-semibold mb-6">About G & Z LLC</h4>
+          <p>
+            G & Z LLC leads with innovation in the digital landscape,
+            specializing in SEO services and efficient logistics solutions,
+            empowering businesses to scale new heights.
+          </p>
+          <div class="flex mt-4 space-x-4">
+            <a
+              href="#"
+              class="transition duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <i class="fab fa-facebook-f h-8 text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="transition duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <i class="fab fa-twitter h-8 text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="transition duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <i class="fab fa-linkedin-in h-8 text-xl"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-6">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">SEO Optimization</a></li>
+            <li>
+              <a href="#" class="hover:text-white">Truck Dispatch Solutions</a>
+            </li>
+            <li><a href="#" class="hover:text-white">Web Development</a></li>
+            <li><a href="#" class="hover:text-white">Digital Marketing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-6">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li><a href="#" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Projects</a></li>
+            <li><a href="#" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-6">Contact Us</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-map-marker-alt h-6 text-xl"></i>
+              <span>15500 Voss Rd,Ste 425, Sugar Land, TX 77498</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-phone h-6 text-xl"></i>
+              <span>(229) 454-7000</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-envelope h-6 text-xl"></i>
+              <span>g&zllc@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Initialize team members carousel
+        $(".team-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            600: {
+              items: 2,
+              nav: false,
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: true,
+            },
+          },
+        });
+
+        // Initialize testimonials carousel
+        $(".testimonial-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            600: {
+              items: 2,
+              nav: false,
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: true,
+            },
+          },
+        });
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation duration
+        easing: "ease", // Animation easing
+        once: true, // Whether animation should happen only once - while scrolling down
+        mirror: false, // Whether elements should animate out while scrolling past them
+      });
+    </script>
+  </body>
 </html>
