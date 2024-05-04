@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - G & Z LLC</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black text-white py-2">
+      <div
+        class="container mx-auto flex flex-wrap justify-between items-center"
+      >
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+          <div class="text-lg font-semibold">G & Z LLC</div>
+        </div>
+
+        <button
+          id="menu-btn"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center md:hidden text-white rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <div
+          class="hidden w-full md:flex md:items-center md:w-auto"
+          id="navbar-default"
+        >
+          <ul
+            class="text-lg font-semibold flex flex-col p-2 mt-4 bg-black rounded-lg md:flex-row md:space-x-8 md:mt-0 md:p-0 md:bg-transparent"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-1 px-3 rounded md:p-0 md:text-white hover:bg-gray-700 md:hover:bg-transparent"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="aboutus.html"
+                class="block py-1 px-3 rounded md:p-0 md:text-white hover:bg-gray-700 md:hover:bg-transparent"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block py-1 px-3 rounded md:p-0 md:text-white hover:bg-gray-700 md:hover:bg-transparent"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="max-w-full max-h-full py-20"
+      style="
+        background-image: url('./images/truck1.avif');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="container mx-auto px-4 py-8 text-center max-w-2xl">
+        <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">
+          Feel free to contact us today and get your solution
+        </h2>
+        <p
+          class="text-2xl mb-8 font-bold text-stroke"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          At G & Z LLC, we excel in the digital services arena with innovative
+          solutions. Our team of dedicated professionals specializes in
+          providing comprehensive digital marketing strategies and custom
+          software development to streamline business operations and enhance
+          customer engagement.
+        </p>
+      </div>
+    </section>
+    <!-- Contact Us Form and Info -->
+    <section class="container mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div
+          data-aos="fade-right"
+          class="bg-white rounded-lg p-8 shadow-xl border border-gray-200"
+        >
+          <h1 class="text-4xl font-bold mb-8 text-gray-800" data-aos="fade-up">
+            Get in Touch
+          </h1>
+          <form action="#" method="POST" class="space-y-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="w-full p-4 rounded text-gray-700 border border-gray-300"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="w-full p-4 rounded text-gray-700 border border-gray-300"
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              class="w-full p-4 rounded text-gray-700 border border-gray-300"
+            />
+            <textarea
+              name="description"
+              rows="4"
+              placeholder="Your Message"
+              class="w-full p-4 rounded text-gray-700 border border-gray-300"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <div data-aos="fade-left">
+          <div class="grid grid-cols-1 gap-6 py-20">
+            <!-- Enhanced Cards with Gradient and Hover Effects -->
+            <div
+              class="bg-white p-6 shadow-lg rounded-lg flex items-center hover:shadow-2xl transition duration-500"
+            >
+              <i class="fas fa-map-marker-alt text-3xl"></i>
+              <div class="ml-4">
+                <p class="font-semibold text-lg">Location</p>
+                <p>15500 Voss Rd, Ste 425, Sugar Land, TX 77498</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-6 shadow-lg rounded-lg flex items-center hover:shadow-2xl transition duration-500"
+            >
+              <i class="fas fa-phone-alt text-3xl"></i>
+              <div class="ml-4">
+                <p class="font-semibold text-lg">Phone</p>
+                <p>(229) 454-7000</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-6 shadow-lg rounded-lg flex items-center hover:shadow-2xl transition duration-500"
+            >
+              <i class="fas fa-envelope text-3xl"></i>
+              <div class="ml-4">
+                <p class="font-semibold text-lg">Email</p>
+                <p>g&zllc@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300 py-20">
+      <div
+        class="container mx-auto px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-base md:text-lg"
+      >
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h4 class="text-2xl font-semibold mb-8">About G & Z LLC</h4>
+          <p>
+            G & Z LLC leads with innovation in the digital landscape,
+            specializing in SEO services and efficient logistics solutions,
+            empowering businesses to scale new heights.
+          </p>
+          <div class="flex mt-6 space-x-4">
+            <a
+              href="#"
+              class="transition duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <i class="fab fa-facebook-f h-10 text-2xl"></i>
+            </a>
+            <a
+              href="#"
+              class="transition duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <i class="fab fa-twitter h-10 text-2xl"></i>
+            </a>
+            <a
+              href="#"
+              class="transition duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <i class="fab fa-linkedin-in h-10 text-2xl"></i>
+            </a>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1200">
+          <h4 class="text-2xl font-semibold mb-8">Services</h4>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >SEO Optimization</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Truck Dispatch Solutions</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Web Development</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Digital Marketing</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1400">
+          <h4 class="text-2xl font-semibold mb-8">Quick Links</h4>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="home.html"
+                class="hover:text-white transition-colors duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="aboutus.html"
+                class="hover:text-white transition-colors duration-200"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="hover:text-white transition-colors duration-200"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1600">
+          <h4 class="text-2xl font-semibold mb-8">Contact Us</h4>
+          <ul class="space-y-3">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-map-marker-alt h-8 text-2xl"></i>
+              <span>15500 Voss Rd, Ste 425, Sugar Land, TX 77498</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-phone h-8 text-2xl"></i>
+              <span>(229) 454-7000</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-envelope h-8 text-2xl"></i>
+              <span>g&zllc@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // controls the speed of the animation
+        once: true, // whether animation should happen only once while scrolling down
+      });
+    </script>
+    <script>
+      document
+        .getElementById("menu-btn")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("navbar-default");
+          menu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
